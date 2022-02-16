@@ -44,6 +44,15 @@ module.exports = {
                         path: "/handbook/Generics"
                     }
                 ],
+            },
+            {
+                title: '日常收集',
+                path:'/collect/Fragment1',
+                collapsable: false, // 不折叠
+                childrend:[{
+                    title: "对象去重",
+                    path: "/collect/Fragment1"
+                }]
             }
         ]
     }
