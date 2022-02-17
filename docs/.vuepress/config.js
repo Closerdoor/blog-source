@@ -49,9 +49,46 @@ module.exports = {
                 title: '日常收集',
                 path:'/collect/Fragment1',
                 collapsable: false, // 不折叠
-                childrend:[{
-                    title: "对象去重",
+                children:[{
+                    title: "数据类型判断",
                     path: "/collect/Fragment1"
+                },{
+                    title: "数组对象去重",
+                    path: "/collect/Fragment2"
+                },{
+                    title: "点击复制链接",
+                    path: "/collect/Fragment3"
+                },{
+                    title: "websocket实现消息通知",
+                    path: "/collect/Fragment4"
+                },{
+                    title: "扁平/树形结构转换",
+                    path: "/collect/Fragment5"
+                }]
+            },{
+                title: '小插件(工具库)',
+                path:'/plugin/Moment',
+                collapsable: false, // 不折叠
+                children:[{
+                    title: "moment.js",
+                    path: "/plugin/Moment"
+                },{
+                    title: "生成二维码(qrcodejs2)",
+                    path: "/plugin/Qrcodejs2"
+                }]
+            },{
+                title: 'css样式库',
+                path:'/quickCSS/Scrollbar',
+                collapsable: false, // 不折叠
+                children:[{
+                    title: "滚动条样式",
+                    path: "/quickCSS/Scrollbar"
+                },{
+                    title: "文本超出换行",
+                    path: "/quickCSS/Ellipsis"
+                },{
+                    title: "input输入框",
+                    path: "/quickCSS/Input"
                 }]
             }
         ]
