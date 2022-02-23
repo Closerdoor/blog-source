@@ -46,6 +46,16 @@ module.exports = {
                 ],
             },
             {
+                title: "Typescript",
+                path: '/typescript/basic',
+                collapsable: false, // 不折叠
+                children: [{
+                        title: "基础类型",
+                        path: "/typescript/basic"
+                    },
+                ],
+            },
+            {
                 title: '日常收集',
                 path:'/collect/Fragment1',
                 collapsable: false, // 不折叠
@@ -64,6 +74,9 @@ module.exports = {
                 },{
                     title: "扁平/树形结构转换",
                     path: "/collect/Fragment5"
+                },{
+                    title: "滚动条实现动画",
+                    path: "/collect/Fragment6"
                 }]
             },{
                 title: '小插件(工具库)',
