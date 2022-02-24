@@ -36,7 +36,7 @@ module.exports = {
                 path: '/handbook/ConditionalTypes',
                 collapsable: false, // 不折叠
                 children: [{
-                        title: "条件类型",
+                        title: "vue3.2 setup",
                         path: "/handbook/ConditionalTypes"
                     },
                     {
