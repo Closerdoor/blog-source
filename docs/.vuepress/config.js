@@ -46,6 +46,19 @@ module.exports = {
                 ],
             },
             {
+                title: "http协议",
+                path: '/http/http',
+                collapsable: false, // 不折叠
+                children: [{
+                        title: "http",
+                        path: "/http/http"
+                    },{
+                        title: "状态码",
+                        path: "/http/StatusCode"
+                    },
+                ],
+            },
+            {
                 title: "Typescript",
                 path: '/typescript/basic',
                 collapsable: false, // 不折叠
@@ -88,6 +101,9 @@ module.exports = {
                 },{
                     title: "生成二维码(qrcodejs2)",
                     path: "/plugin/Qrcodejs2"
+                },{
+                    title: "前端显示markdown文件",
+                    path: "/plugin/marked"
                 }]
             },{
                 title: 'css样式库',
