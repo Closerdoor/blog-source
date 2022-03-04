@@ -37,6 +37,9 @@ module.exports = {
                 collapsable: false, // 不折叠
                 children: [{
                         title: "meta",
+                        path: "/htmlcss/meta"
+                    },{
+                        title: "html标签",
                         path: "/htmlcss/html"
                     },
                 ],
