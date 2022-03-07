@@ -33,6 +33,9 @@ module.exports = {
                     title: "html",
                     path: "/htmlcss/html"
                 }, {
+                    title: "css",
+                    path: "/htmlcss/css"
+                },{
                     title: "seo",
                     path: "/htmlcss/seo"
                 }, ],
@@ -46,7 +49,7 @@ module.exports = {
                         path: "/handbook/ConditionalTypes"
                     },
                     {
-                        title: "泛型",
+                        title: "markdown语法模板",
                         path: "/handbook/Generics"
                     }
                 ],
