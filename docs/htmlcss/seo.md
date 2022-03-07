@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: seo优化
-=======
-title: meta
->>>>>>> 706695f9545bd9355c5ce8a80341f2593f42d1c8
 author: Closerdoor
 date: '2021-12-12'
 ---
