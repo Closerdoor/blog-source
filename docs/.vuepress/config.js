@@ -33,12 +33,15 @@ module.exports = {
                     title: "html",
                     path: "/htmlcss/html"
                 }, {
-                    title: "css",
-                    path: "/htmlcss/css"
-                },{
+                    title: "css基础",
+                    path: "/htmlcss/css2"
+                }, {
+                    title: "常用css",
+                    path: "/htmlcss/css1"
+                }, {
                     title: "seo",
                     path: "/htmlcss/seo"
-                }, ],
+                }, ]
             },
             {
                 title: "基础学习",

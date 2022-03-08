@@ -1,33 +1,18 @@
 ---
-title: css
+title: css基础
 author: Closerdoor
 date: '2021-12-12'
 ---
 
-## css引入方式
-### 行内(内联样式)
-`<p style=""></p>`
-### 内部样式
-语法中，style标签一般位于head标签中title标签之后，也可以把他放在HTML文档的任何地方。  
-type="text/CSS"  在html5中可以省略
-```html
-<style type="text/CSS"></style>
-```
-### 外部样式 
-link 是个单标签  
-语法中，link标签需要放在head头部标签中，并且必须指定link标签的三个属性，具体如下：
-```
-href：定义所链接外部样式表文件的URL，可以是相对路径，也可以是绝对路径。
-type：定义所链接文档的类型，在这里需要指定为“text/CSS”，表示链接的外部文件为CSS样式表。
-rel：定义当前文档与被链接文档之间的关系，在这里需要指定为“stylesheet”，表示被链接的文档是一个样式表文件。
-```
-```html
-<head>
-  <link href="./url"  rel="stylesheet" type="text/css"> />
-</head>
-```
-## css的继承
-子元素可以继承父元素的样式（text-，font-，line-这些元素开头的都可以继承，以及color属性）
+
+## margin和padding
+### **外边距合并**
+当上下相邻的两个块元素相遇时，如果上面的元素有下外边距margin-bottom，下面的元素有上外边距margin-top，则他们之间的垂直间距不是margin-bottom与margin-top之和，而是两者中的较大者。这种现象被称为相邻块元素垂直外边距的合并
+### 嵌套块元素垂直外边距的合并
+两个嵌套关系的块元素，如果父元素没有上内边距及边框，则父元素的上外边距会与子元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。
+解决方案：  
+1. 可以为父元素定义1像素的上边框或上内边距。
+2. 可以为父元素添加overflow:hidden。
 ## 字体 font
 ### font-size
 字号大小，一般用px和em
@@ -56,6 +41,10 @@ RGB代码，如红色可以表示为rgb(255,0,0)或rgb(100%,0%,0%)。
 ### line-height
 ine-height属性用于设置行间距，单位有三种，分别为像素px，相对值em和百分比%  
 一般情况下，行距比字号大7 8像素左右就可以了。
+### vertical-align
+`vertical-align : baseline |top |middle |bottom |sub;`
+vertical-align 不影响块级元素中的内容对齐，它只针对于 行内元素或者行内块元素，特别是行内块元素， **通常用来控制图片/表单与文字的对齐**。  
+ 默认的图片会和文字基线对齐。
 ### text-align
 left：左对齐（默认值）  
 right：右对齐
@@ -71,31 +60,7 @@ text-indent属性用于设置首行文本的缩进，其属性值可为不同单
 | underline    | 定义文本下的一条线。下划线 也是我们链接自带的 |
 | overline     | 定义文本上的一条线。                          |
 | line-through | 定义穿过文本下的一条线。                      |
-## display
-元素的默认display为inline
-### 行内元素 inline
-常见的行内元素有<a>、<strong>、<b>、<em>、<i>、<del>、<s>、<ins>、<u>、<span>等，其中<span>标签最典型的行内元素。  
-行内元素的特点：
-（1）和相邻行内元素在一行上。  
-（2）高、宽无效，对margin仅设置左右方向有效，上下无效；padding设置上下左右都有效，即会撑大空间。border有效，背景色有效。行高有效
-（3）默认宽度就是它本身内容的宽度。  
-（4）行内元素只能容纳文本或则其他行内元素。（a特殊,a里面不能放a）
-```
-在行内元素中有几个特殊的标签——<img />、<input />、<td> 这些标签虽然可以设置宽度高度 但是在现代浏览器内特性默认展示模式为 行内(inline) 元素
-```  
-### 块元素 block
-常见的块元素有<h1>~<h6>、<p>、<div>、<ul>、<ol>、<li>等，其中<div>标签是最典型的块元素。  
-块级元素的特点：  
-（1）总是从新行开始  
-（2）高度，行高、外边距以及内边距都可以控制。  
-（3）宽度默认是容器的100%  
-（4）可以容纳内联元素和其他块元素。  
-只有文字才能组成段落,因 p里面不能放块级元素，同理还有这些标签h1,h2,h3,h4,h5,h6,dt，他们都是文字类块级标签，里面不能放其他块级元素。
-### 行内块元素 inline-block
-行内块元素的特点：  
-（1）和相邻行内元素（行内块）在一行上,但是之间会有空白缝隙。  
-（2）默认宽度就是它本身内容的宽度。  
-（3）高度，行高、外边距以及内边距都可以控制。  
+
 
 ## border 
 复合写法:border : border-width || border-style || border-color ;
@@ -146,28 +111,3 @@ position : 　top | center | bottom | left | center | right ;
 `background-attachment : scroll | fixed `  
 scroll : 　背景图像是随对象内容滚动  
 fixed : 　背景图像固定 
-
-## 标准盒与怪异盒
-box-sizing: content-box(默认) | boder-box;
-
-## 伪类选择器
-### 链接伪类选择器
-
-- :link      /* 未访问的链接 */
-- :visited   /* 已访问的链接 */
-- :hover     /* 鼠标移动到链接上 */
-- :active    /* 选定的链接 */
-
-
-   注意写的时候，他们的顺序尽量不要颠倒  按照  lvha 的顺序。   love   hate  爱上了讨厌 记忆法    或者   lv 包包 非常 hao 
-
-~~~css
-a {   /* a是标签选择器  所有的链接 */
-			font-weight: 700;
-			font-size: 16px;
-			color: gray;
-		}
-a:hover {   /* :hover 是链接伪类选择器 鼠标经过 */
-			color: red; /*  鼠标经过的时候，由原来的 灰色 变成了红色 */
-}
-~~~
