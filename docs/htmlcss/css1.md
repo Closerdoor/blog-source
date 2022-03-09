@@ -108,6 +108,12 @@ background-position : position || position
 position : 　top | center | bottom | left | center | right ;
 ```
 ### background-attachment
-`background-attachment : scroll | fixed `  
+`background-attachment : scroll(默认) | fixed `  
 scroll : 　背景图像是随对象内容滚动  
 fixed : 　背景图像固定 
+### background-origin
+`background-origin: padding-box|border-box|content-box;`
+背景图像定位区域的坐标零点
+### background-clip
+`background-clip: border-box(默认)|padding-box|content-box;`
+背景图像绘制区域

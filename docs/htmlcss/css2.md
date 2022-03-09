@@ -87,6 +87,7 @@ text-overflow: ellipsis;
 white-space: nowrap;
 ``` 
 ### white-space:自动换行
+`white-space:normal(默认，会自动换行) | nowrap;`
 | 值       | 描述                                                           |
 | -------- | -------------------------------------------------------------- |
 | normal   | 默认。空白会被浏览器忽略。                                     |

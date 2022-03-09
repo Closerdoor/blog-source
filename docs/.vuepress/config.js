@@ -33,6 +33,12 @@ module.exports = {
                     title: "html",
                     path: "/htmlcss/html"
                 }, {
+                    title: "table表格",
+                    path: "/htmlcss/table"
+                }, {
+                    title: "form表单",
+                    path: "/htmlcss/form"
+                }, {
                     title: "css基础",
                     path: "/htmlcss/css2"
                 }, {
