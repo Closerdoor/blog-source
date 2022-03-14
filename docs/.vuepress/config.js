@@ -45,6 +45,12 @@ module.exports = {
                     title: "常用css",
                     path: "/htmlcss/css1"
                 }, {
+                    title: "浮动和定位",
+                    path: "/htmlcss/float"
+                }, {
+                    title: "css书写规范",
+                    path: "/htmlcss/stand"
+                }, {
                     title: "seo",
                     path: "/htmlcss/seo"
                 }, ]

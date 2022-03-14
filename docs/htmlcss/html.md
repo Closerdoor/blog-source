@@ -38,6 +38,9 @@ html {
   * link标签
   `<link rel="stylesheet" href="my-css-file.css">`
   rel="stylesheet"表明这是文档的样式表，而 href包含了样式表文件的路径
+    * favicon.ico
+    `<link rel="shortcut icon" href="../favicon.ico" >`
+    favicon.ico的尺寸有16×16、32×32、48×48
   * script标签
   `<script src="my-js-file.js"></script>`
 * body
@@ -116,6 +119,22 @@ img[Attributes Style] {
     aspect-ratio: auto 751 / 377;
     height: 377px;
 }
+```
+### img加载失败处理 onerror
+```js
+<img src="logo.png" onerror="errHandle(this)" >
+
+function errHandle (imgDiv) {
+  imgDiv.src = 'errorTip.png'; 
+}
+```
+onerror 可能造成死循环
+```js
+function errHandle (imgDiv) {
+  imgDiv.src = 'errorTip.png'; 
+  imgDiv.onerror = null; // 避免请求失败后不断请求
+}
+<img src="images/logo.png" onerror="javascript:this.src='errorTip.png';this.οnerrοr=null">`
 ```
 ## h1~h6
 h4标签的字体大小为默认大小  

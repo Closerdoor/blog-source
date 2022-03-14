@@ -43,7 +43,7 @@ function queryChildren(parent, list) {
 function treeSort(arr, sortName) { // sortName 表示用来排序的字段
   arr.sort((a, b) => a[sortName] - b[sortName]).forEach((item) => {
     if (item.children) {
-      treeSort(item.children)
+      treeSort(item.children, sortName)
     }
   })
   return arr
