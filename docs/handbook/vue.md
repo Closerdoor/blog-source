@@ -33,7 +33,21 @@ box.value.test()
 </script>
 ```
 ## 子组件向父组件传参
-```js
+子组件
+```html
+<script lang="ts" setup>
+const emit = defineEmits(['on-save-ok'])
+emit('on-save-ok', '1111')
+</script>
+```
+父组件
+```html
+<Parent ref="parent" @onSaveOk="test" />
+<script>
+const test = (content) => {
+  console.log(content)
+}
+</script>
 ```
 
 ## vue3中v-model语法糖

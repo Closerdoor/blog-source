@@ -57,11 +57,11 @@ module.exports = {
             },
             {
                 title: "基础学习",
-                path: '/handbook/ConditionalTypes',
+                path: '/handbook/vue',
                 collapsable: false, // 不折叠
                 children: [{
                         title: "vue3.2 setup",
-                        path: "/handbook/ConditionalTypes"
+                        path: "/handbook/vue"
                     },
                     {
                         title: "markdown语法模板",
