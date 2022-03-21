@@ -29,7 +29,24 @@ rel：定义当前文档与被链接文档之间的关系，在这里需要指�
 
 ## css的继承
 子元素可以继承父元素的样式（text-，font-，line-这些元素开头的都可以继承，以及color属性）
-
+### 可继承的属性
+字体和文本
+```
+font-family、font-weight、font-size、font-style、font-variant：设置小型大写字母的字体显示文本，这意味着所有的小写字母均会被转换为大写，但是所有使用小型大写 字体的字母与其余文本相比，其字体尺寸更小。
+​ font-stretch：对当前的 font-family 进行伸缩变形。所有主流浏览器都不支持。
+​ font-size-adjust：为某个元素规定一个 aspect 值，这样就可以保持首选字体的 x-height。
+2、文本系列属性
+text-indent：文本缩进
+text-align：文本水平对齐
+line-height：行高
+word-spacing：增加或减少单词间的空白（即字间隔）
+letter-spacing：增加或减少字符间的空白（字符间距）
+text-transform：控制文本大小写
+direction：规定文本的书写方向
+color：文本颜色 a元素除外
+3、visibility
+4、cursor
+```
 ## display
 元素的默认display为inline
 ### 行内元素 inline
@@ -154,7 +171,7 @@ p::selection {
 ```
 在div内部的开始位置和结束位创建一个元素，该元素为行内元素，且必须要结合content属性使用。
 ```css
-div::befor {
+div::before {
   content:"开始";
 }
 div::after {

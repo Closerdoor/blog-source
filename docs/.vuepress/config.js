@@ -47,7 +47,7 @@ module.exports = {
                 }, {
                     title: "css3",
                     path: "/htmlcss/css3"
-                },{
+                }, {
                     title: "浮动和定位",
                     path: "/htmlcss/float"
                 }, {
@@ -56,7 +56,16 @@ module.exports = {
                 }, {
                     title: "seo",
                     path: "/htmlcss/seo"
-                }, ]
+                }]
+            },
+            {
+                title: "javascript",
+                path: '/javascript/general',
+                collapsable: false, // 不折叠
+                children: [{
+                    title: "基础",
+                    path: "/javascript/general"
+                }, ],
             },
             {
                 title: "基础学习",
