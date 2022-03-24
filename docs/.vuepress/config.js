@@ -68,12 +68,19 @@ module.exports = {
                 }, ],
             },
             {
-                title: "基础学习",
-                path: '/handbook/vue',
+                title: "vue框架常用",
+                path: '/handbook/vue3_2',
                 collapsable: false, // 不折叠
                 children: [{
                         title: "vue3.2 setup",
-                        path: "/handbook/vue"
+                        path: "/handbook/vue3_2"
+                    }, {
+                        title: "vue3",
+                        path: "/handbook/vue3"
+                    },
+                    {
+                        title: "vue2",
+                        path: "/handbook/vue2"
                     },
                     {
                         title: "markdown语法模板",

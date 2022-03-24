@@ -8,7 +8,7 @@ date: '2021-12-12'
 ```js
 const props = defineProps({
   pluginId: {
-    type: String,
+    type: String, 
   },
 });
 ```
