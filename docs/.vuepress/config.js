@@ -65,7 +65,10 @@ module.exports = {
                 children: [{
                     title: "基础",
                     path: "/javascript/general"
-                }, ],
+                }, {
+                    title: "数组",
+                    path: "/javascript/array"
+                },],
             },
             {
                 title: "vue框架常用",
