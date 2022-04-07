@@ -1,5 +1,5 @@
 ---
-title: 数组
+title: 数组方法
 author: Closerdoor
 date: '2021-12-12'
 ---
@@ -66,4 +66,18 @@ function reverse(arr) {
   }
   return newArr;
 }
+```
+## arr.reduce() 原理
+### 求字符串中字母出现的次数
+```js
+//返回 {p:2,a:3,...}
+const str = 'sfhjasfjgfasjuwqrqadqeiqsajsdaiwqdaklldflas-cmxzmnha';
+let res = str.split('').reduce((total,curr,index) => {
+  if(total[curr]){
+    total[curr]++
+  }else {
+    total[curr] = 1
+  }
+  return total
+},{})
 ```

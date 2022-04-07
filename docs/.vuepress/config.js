@@ -66,8 +66,14 @@ module.exports = {
                     title: "基础",
                     path: "/javascript/general"
                 }, {
-                    title: "数组",
+                    title: "数组方法",
                     path: "/javascript/array"
+                },{
+                    title: "字符串方法",
+                    path: "/javascript/string"
+                },{
+                    title: "对象方法",
+                    path: "/javascript/object"
                 },],
             },
             {
@@ -164,6 +170,9 @@ module.exports = {
                 }, {
                     title: "滚动条实现动画",
                     path: "/collect/Fragment6"
+                }, {
+                    title: "锚点链接",
+                    path: "/collect/anchor"
                 }]
             }, {
                 title: '小插件(工具库)',
@@ -178,6 +187,9 @@ module.exports = {
                 }, {
                     title: "前端显示markdown文件",
                     path: "/plugin/marked"
+                },{
+                    title: "swiper",
+                    path: "/plugin/swiper"
                 }]
             }, {
                 title: 'css样式库',
