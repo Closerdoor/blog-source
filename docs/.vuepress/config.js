@@ -63,17 +63,26 @@ module.exports = {
                 path: '/javascript/general',
                 collapsable: false, // 不折叠
                 children: [{
-                    title: "基础",
+                    title: "数据类型基础",
                     path: "/javascript/general"
                 }, {
-                    title: "数组方法",
+                    title: "Array数组方法",
                     path: "/javascript/array"
                 },{
-                    title: "字符串方法",
+                    title: "String字符串方法",
                     path: "/javascript/string"
                 },{
-                    title: "对象方法",
+                    title: "Object对象方法",
                     path: "/javascript/object"
+                },{
+                    title: "Date和Math对象",
+                    path: "/javascript/date_math"
+                },{
+                    title: "DOM",
+                    path: "/javascript/dom"
+                },{
+                    title: "this",
+                    path: "/javascript/this"
                 },],
             },
             {
