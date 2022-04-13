@@ -182,6 +182,9 @@ module.exports = {
                 }, {
                     title: "锚点链接",
                     path: "/collect/anchor"
+                }, {
+                    title: "登录/注册",
+                    path: "/collect/login"
                 }]
             }, {
                 title: '小插件(工具库)',
