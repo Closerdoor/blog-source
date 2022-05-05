@@ -81,6 +81,9 @@ module.exports = {
                     title: "DOM",
                     path: "/javascript/dom"
                 },{
+                    title: "坐标",
+                    path: "/javascript/position"
+                },{
                     title: "this",
                     path: "/javascript/this"
                 },],
