@@ -70,6 +70,8 @@ property 过渡的属性名称 width left 等数值型或 color颜色
 duration 过渡需要的时间 s ms
 timing-function 过渡速度曲线 linear(匀速)|ease(默认)|ease-in|ease-out|ease-in-out
 delay 延时时长 m ms
+默认样式
+`transition:all 0s ease 0s;`
 ```
 
 ## amimation 帧动画
