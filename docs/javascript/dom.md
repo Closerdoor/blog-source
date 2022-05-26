@@ -162,3 +162,39 @@ element.isEqualNode(element2); //返回布尔值,判断element与element2是否�
 element.hasAttributes(); //返回布尔值,判断当前节点对象是否包含属性
 element.hasAttribute(property); //返回布尔值, 判断该节点是否拥有指定的 property 属性
 ```
+
+## 案例[吸顶导航]
+```js
+//获取nav的高度
+let oNav = document.querySelector('.nav');
+let height = oNav.offsetHeight;
+let dom;
+//获取窗口滚动距离
+function getDomScroll(){
+    return {
+        top:document.body.scrollTop || document.documentElement.scrollTop,
+        left:document.body.scrollLeft || document.documentElement.scrollLeft,
+    }
+}
+function createDom(){
+    let vDom = document.createElement('div');
+    vDom.style.height = height + 'px';
+    vDom.classList.add('#temp');
+    return {
+        'remove':function() {
+            vDom.remove()
+        }
+    }
+}
+document.addEventListener('scroll',function(e){
+    //如果滚动距离超过nav高度，把nav变成fixed定位，并创建一个虚拟dom，填补定位后产生的空白区域
+    if(getDomScroll().top > height) {
+        oNav.style.position = 'fixed';
+        if(!document.querySelector('#temp')){
+            dom = createDom()
+        }
+    } else {
+        dom.remove()
+    }
+})
+```
