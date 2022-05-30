@@ -97,3 +97,17 @@ export default {
 }
 </script>
 ```
+
+## watch同时监听多个数据
+```js
+watch(
+  () => [props.chatId, props.controlId],
+  ([curr1, curr2], [pre1, pre2]) => {
+    if (curr1) {
+      console.log('props.chatId');
+      console.log(props);
+      console.log(curr1, pre1, curr2, pre2);
+    }
+  }
+);
+```
