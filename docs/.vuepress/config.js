@@ -1,6 +1,6 @@
 module.exports = {
     base: '/vuepress-blog/',
-    title: 'Javascript 补完计划',
+    title: 'Javascript 基础补完计划',
     description: 'Javascript基础知识',
     theme: 'reco',
     locales: {
@@ -81,6 +81,9 @@ module.exports = {
                     title: "DOM",
                     path: "/javascript/dom"
                 },{
+                    title: "BOM",
+                    path: "/javascript/bom"
+                },{
                     title: "坐标",
                     path: "/javascript/position"
                 },{
@@ -89,7 +92,10 @@ module.exports = {
                 },{
                     title: "this",
                     path: "/javascript/this"
-                },],
+                },{
+                    title: "正则表达式",
+                    path: "/javascript/RegExp"
+                }],
             },
             {
                 title: "vue框架常用",

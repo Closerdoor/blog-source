@@ -49,5 +49,12 @@ const test = (content) => {
 }
 </script>
 ```
-
+## 强制刷新组件forceUpdate
+```js
+import { getCurrentInstance } from "vue";
+let { ctx } = getCurrentInstance();
+ctx.$forceUpdate()
+//vue2中
+this.$forceUpdate()
+```
 ## vue3中v-model语法糖
