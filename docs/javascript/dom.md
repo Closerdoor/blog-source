@@ -38,6 +38,10 @@ element.textContent //设置或返回一个节点和它的文本内容
 element.innerText //设置或返回一个节点和它的文本内容
 element.tagName //作为一个字符串返回某个元素的标记名（大写）
 element.className //获取标签的class属性值
+element.classList //获取标签的class 伪数组
+element.classList.add('class') //给标签添加class
+element.classList.remove('class') //移除标签class
+element.classList.contains('class') // 判断标签是否包含class true or false
 
 nodelist.length //返回节点列表的节点数目。
 nodelist.item(idx) //返回某个元素基于文档树的索引 同 nodelist[idx]
