@@ -25,7 +25,7 @@ module.exports = {
         sidebar: [{
                 title: "htmlcss",
                 path: '/htmlcss/html',
-                collapsable: false, // 不折叠
+                collapsable: true, // 不折叠
                 children: [{
                     title: "meta",
                     path: "/htmlcss/meta"
@@ -96,6 +96,16 @@ module.exports = {
                     title: "正则表达式",
                     path: "/javascript/RegExp"
                 }],
+            },
+            {
+                title: "ES6高阶",
+                path: '/es6/this',
+                collapsable: false, // 不折叠
+                children: [{
+                        title: "call、apply、bind",
+                        path: "/es6/this"
+                    }
+                ],
             },
             {
                 title: "vue框架常用",
@@ -214,6 +224,9 @@ module.exports = {
                 },{
                     title: "swiper",
                     path: "/plugin/swiper"
+                },{
+                    title: "Echarts",
+                    path: "/plugin/Echarts"
                 }]
             }, {
                 title: 'css样式库',

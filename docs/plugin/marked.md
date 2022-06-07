@@ -19,3 +19,9 @@ document.getElementById('content').innerHTML = marked.parse('# Marked in the bro
 ```
 npm install highlight.js
 ```
+引入和使用
+```js
+import hljs from "highlight.js";
+//css文件名可修改，具体主题查看官网
+import "highlight.js/styles/dark.css";
+```

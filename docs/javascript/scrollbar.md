@@ -7,6 +7,9 @@ date: '2021-12-12'
 ```
 window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
 window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft
+
+//兼容处理
+
 ```
 ## mousewheel事件
 ```js
@@ -20,3 +23,5 @@ document.addEventListener("mousewheel",function(e) {
   }
 })
 ```
+
+## scrollIntoView
