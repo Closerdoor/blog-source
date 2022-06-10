@@ -68,31 +68,31 @@ module.exports = {
                 }, {
                     title: "Array数组方法",
                     path: "/javascript/array"
-                },{
+                }, {
                     title: "String字符串方法",
                     path: "/javascript/string"
-                },{
+                }, {
                     title: "Object对象方法",
                     path: "/javascript/object"
-                },{
+                }, {
                     title: "Date和Math对象",
                     path: "/javascript/date_math"
-                },{
+                }, {
                     title: "DOM",
                     path: "/javascript/dom"
-                },{
+                }, {
                     title: "BOM",
                     path: "/javascript/bom"
-                },{
+                }, {
                     title: "坐标",
                     path: "/javascript/position"
-                },{
+                }, {
                     title: "滚动条相关",
                     path: "/javascript/scrollbar"
-                },{
+                }, {
                     title: "this",
                     path: "/javascript/this"
-                },{
+                }, {
                     title: "正则表达式",
                     path: "/javascript/RegExp"
                 }],
@@ -102,10 +102,9 @@ module.exports = {
                 path: '/es6/this',
                 collapsable: false, // 不折叠
                 children: [{
-                        title: "call、apply、bind",
-                        path: "/es6/this"
-                    }
-                ],
+                    title: "call、apply、bind",
+                    path: "/es6/this"
+                }],
             },
             {
                 title: "vue框架常用",
@@ -195,6 +194,9 @@ module.exports = {
                 }, {
                     title: "websocket实现消息通知",
                     path: "/collect/Fragment4"
+                },{
+                    title: "websocket封装",
+                    path: "/collect/websocket"
                 }, {
                     title: "扁平/树形结构转换",
                     path: "/collect/Fragment5"
@@ -221,10 +223,10 @@ module.exports = {
                 }, {
                     title: "前端显示markdown文件",
                     path: "/plugin/marked"
-                },{
+                }, {
                     title: "swiper",
                     path: "/plugin/swiper"
-                },{
+                }, {
                     title: "Echarts",
                     path: "/plugin/Echarts"
                 }]
