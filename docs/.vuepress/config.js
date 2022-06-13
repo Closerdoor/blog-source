@@ -83,6 +83,9 @@ module.exports = {
                 }, {
                     title: "BOM",
                     path: "/javascript/bom"
+                },{
+                    title: "cookie",
+                    path: "/javascript/cookie"
                 }, {
                     title: "坐标",
                     path: "/javascript/position"
@@ -104,6 +107,15 @@ module.exports = {
                 children: [{
                     title: "call、apply、bind",
                     path: "/es6/this"
+                },{
+                    title: "闭包",
+                    path: "/es6/closure"
+                },{
+                    title: "柯里化函数",
+                    path: "/es6/currying"
+                },{
+                    title: "解构赋值",
+                    path: "/es6/rest"
                 }],
             },
             {

@@ -34,3 +34,25 @@ arr.push.apply(arr, otherArr);
 Math.max.apply(null, [1,2,3]); // 3
 ```
 ## bind
+函数.bind(绑定对象,参数) 返回一个新函数
+新函数内部的this永远指向 绑定对象 新函数永远持有bind参数
+
+和call apply的区别在于 不是主动执行函数的时候进行this的偏转 
+而是在函数声明或者赋值的时候绑定bind
+
+函数被bind后，即使使用call或apply，内部this仍然指向bind绑定对象
+```js
+//可以用在setInterval中的匿名函数，使它绑定this
+const OUA = {
+  age: 4,
+  add: function () {
+    console.log(this)
+    setInterval(function () {
+      console.log(this.age);
+    }.bind(this), 400);
+  }
+}
+```
+
+### bind偏函数
+**固定一个函数的一些参数，然后产生另一个更小元的函数**。主要用于数学领域，部分算法会拥有预设的初始参数，当次方法被调用时，预设参数会在前面，传递进去的参数在后面

@@ -48,3 +48,18 @@ str.replace(regexp|substr, newSubStr|function)
 ```
 str.slice(beginIndex[, endIndex])
 ```
+
+### 转义字符 
+如果在一个正常字符前添加反斜杠，JavaScript 会忽略该反斜杠。
+| 转义符 | 含义   | 
+| :----- | :---  | 
+|   \n  | 换行符,n 是 newline 的意思   |         
+|   \t  | 制表符,tab   |         
+|   \b  | 空格,b 是 blank 的意思   |         
+|   \r  | 回车   |         
+|   \f  | 进制   |         
+|   \\  | 斜杠\   |         
+|   \'  | 单引号' |         
+|   \"  | 双引号" |         
+|   \xnn  | 由 2 位十六进制数值 XX 指定的 Latin-1 字符,n为0~F。例：\x41表示"A" |         
+|   \unnnn  | 由 4 位十六进制数值 XX 指定的 Latin-1 字符(n为0~F)例：\u03a3表示希腊字符 |         
