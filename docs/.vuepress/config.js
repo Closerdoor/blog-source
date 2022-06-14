@@ -116,6 +116,12 @@ module.exports = {
                 },{
                     title: "解构赋值",
                     path: "/es6/rest"
+                },{
+                    title: "prototype",
+                    path: "/es6/prototype"
+                },{
+                    title: "function",
+                    path: "/es6/function"
                 }],
             },
             {
