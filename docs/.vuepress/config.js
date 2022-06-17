@@ -126,22 +126,32 @@ module.exports = {
             },
             {
                 title: "vue框架常用",
-                path: '/handbook/vue3_2',
+                path: '/vue/vue3_2',
                 collapsable: false, // 不折叠
                 children: [{
                         title: "vue3.2 setup",
-                        path: "/handbook/vue3_2"
+                        path: "/vue/vue3_2"
                     }, {
                         title: "vue3",
-                        path: "/handbook/vue3"
+                        path: "/vue/vue3"
                     },
                     {
                         title: "vue2",
-                        path: "/handbook/vue2"
+                        path: "/vue/vue2"
                     },
                     {
                         title: "markdown语法模板",
-                        path: "/handbook/Generics"
+                        path: "/vue/Generics"
+                    }
+                ],
+            },
+            {
+                title: "react",
+                path: '/react/createApp',
+                collapsable: false, // 不折叠
+                children: [{
+                        title: "react setup",
+                        path: "/react/createApp"
                     }
                 ],
             },
