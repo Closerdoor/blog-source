@@ -122,6 +122,9 @@ module.exports = {
                 },{
                     title: "function",
                     path: "/es6/function"
+                },{
+                    title: "对象高级",
+                    path: "/es6/object"
                 }],
             },
             {
