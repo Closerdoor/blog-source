@@ -125,6 +125,12 @@ module.exports = {
                 },{
                     title: "对象高级",
                     path: "/es6/object"
+                },{
+                    title: "symbol",
+                    path: "/es6/symbol"
+                },{
+                    title: "promise",
+                    path: "/es6/promise"
                 }],
             },
             {
