@@ -6,6 +6,9 @@ date: '2022-06-14'
 
 ## 方法汇总
 ```js
+Object.valueOf();
+Object.toString();
+Object.toLocaleString();
 Object.assign();
 Object.create();//创建一个空对象，空对象的__proto__为第一个参数，可用来继承原型。是浅拷贝，改变了第一个参数后，值也会相应改变
 Object.keys(obj)//把对象的所有属性名称(不包括```不可枚举```)组成一个数组
