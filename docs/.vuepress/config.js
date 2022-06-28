@@ -86,6 +86,9 @@ module.exports = {
                 }, {
                     title: "Date和Math对象",
                     path: "/javascript/date_math"
+                },{
+                    title: "Math三角函数",
+                    path: "/javascript/math"
                 }, {
                     title: "DOM",
                     path: "/javascript/dom"
