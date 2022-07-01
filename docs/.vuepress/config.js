@@ -66,6 +66,17 @@ module.exports = {
                     title: "seo",
                     path: "/htmlcss/seo"
                 }]
+            },{
+                title: "html5",
+                path: '/html5/newFeature',
+                collapsable: false, // 不折叠
+                children: [{
+                    title: "新特性",
+                    path: "/html5/newFeature"
+                },{
+                    title: "drag",
+                    path: "/html5/h5drag"
+                }],
             },
             {
                 title: "javascript",

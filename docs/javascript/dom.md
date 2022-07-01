@@ -41,6 +41,7 @@ element.className //获取标签的class属性值
 element.classList //获取标签的class 伪数组
 element.classList.add('class') //给标签添加class
 element.classList.remove('class') //移除标签class
+element.classList.toggle('class') //切换class
 element.classList.contains('class') // 判断标签是否包含class true or false
 
 nodelist.length //返回节点列表的节点数目。
@@ -63,6 +64,7 @@ oInput.setAttribute('checked', true)
 ## 获取节点样式style
 ```js
 //行内样式
+node.style.cssText//获取该标签的所有行内样式
 console.log(oImg.style); //CSSOM对象
 console.log(aImg.style.outline); //标签行内样式 style属性中存在的样式的值
 
