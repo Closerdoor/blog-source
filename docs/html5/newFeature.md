@@ -116,6 +116,7 @@ node.remove()//删除自己以及所有子节点
 node.replaceWith()//将A替换为B A.replaceWith(B)
 node.append()//可以追加多个节点和字符串
 node.prepend()
+ParentNode.replaceChildren(...nodesOrDOMStrings) // 返回 undefined 把父节点内的子节点清空，并换成参数节点
 ```
 ### append与appendChild差异
 - Node.append()允许追加  DOMString 对象，而 Node.appendChild() 只接受 Node 对象。

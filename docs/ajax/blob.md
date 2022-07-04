@@ -4,7 +4,7 @@ author: Closerdoor
 date: '2022-06-24'
 ---
 
-后端返回Blob数据流
+## 后端返回Blob数据流处理
 ```js
 //ajax拦截
 response => {
@@ -37,4 +37,30 @@ http.get(url).then(res => {
   a.click()
   a = null
 })
+```
+
+## 文件上传处理
+```js
+//<input type="file">
+input.addEventListener('change', function (e) {
+  let file = this.files[0];
+})
+//blob处理
+function careateBolbFile(file) {
+  let url = URL.createObjectURL(file);
+  return url;
+}
+function createFileReader(file) {
+  let fileReader = new FileReader()
+  fileReader.readAsDataURL(file)
+  fileReader.onload = function () {
+    let src = this.result;
+    // console.log(src)
+  }
+  //读取文件进行中定时触发
+  fileReader.onprogress = function (e) {
+    // console.log(e.total, e.loaded);
+  }
+  console.log(fileReader)
+}
 ```

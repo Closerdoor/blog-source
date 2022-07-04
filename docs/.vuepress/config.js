@@ -76,6 +76,9 @@ module.exports = {
                 },{
                     title: "drag",
                     path: "/html5/h5drag"
+                },{
+                    title: "video",
+                    path: "/html5/video"
                 }],
             },
             {

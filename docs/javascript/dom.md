@@ -97,7 +97,7 @@ function getInnerText(element) {
 ## 获取节点相关联节点(父子、兄弟)
 ```js
 console.log(oHeader.children); //获取子元素 只有标签
-console.log(oHeader.childNodes); //获取子节点 包含文本节点与标签节点
+console.log(oHeader.childNodes); //获取子节点 包含文本节点与标签节点(不用)
 
 console.log(oHeader.firstChild); //获取第一个子节点(包含文本)
 console.log(oHeader.firstElementChild); //获取第一个子标签节点
@@ -105,8 +105,8 @@ console.log(oHeader.firstElementChild); //获取第一个子标签节点
 console.log(oHeader.lastChild); //获取最后一个子节点(包含文本)
 console.log(oHeader.lastElementChild); //获取最后一个子标签节点
 
-console.log(aP[0].parentElement); //父元素
 console.log(aP[0].parentNode); //父节点
+console.log(aP[0].parentElement); //父元素(不用)
 
 console.log(aP[1].nextElementSibling); //下一个兄弟标签节点
 console.log(aP[1].nextSibling); //下一个兄弟节点(计算文本节点)
