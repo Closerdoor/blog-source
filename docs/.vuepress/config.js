@@ -79,6 +79,9 @@ module.exports = {
                 },{
                     title: "video",
                     path: "/html5/video"
+                },{
+                    title: "audio",
+                    path: "/html5/audio"
                 }],
             },
             {
@@ -157,6 +160,9 @@ module.exports = {
                 }, {
                     title: "promise",
                     path: "/es6/promise"
+                }, {
+                    title: "对象拦截",
+                    path: "/es6/setget"
                 }],
             },
             {
