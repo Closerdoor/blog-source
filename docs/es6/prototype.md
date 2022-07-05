@@ -46,8 +46,31 @@ Animal.prototype.calc = function() {
 2.继承原型
 Children.prototype = new Parent();
 Children.prototype.constructor = Children;
+或
 Children.prototype.__proto__ = Parent.prototype;
+缺点：父类构造函数的引用属性会共享
 ```js
+function Animal(){
+  this.children = [1,2,3,4,5]
+}
+function Pig(){
 
+}
+Pig.prototype = new Animal();
+Pig.prototype.constructor = Pig;
+let pig1 = new Pig();
+let pig2 = new Pig();
+//通过这种方式继承，由于执行了new Animal()，则pig1和pig2的原型上都会有Animal自身的children属性，当修改了其中一个时，另一个也会发生变化
+```
+
+### 寄生式继承
+```js
+function inheritPrototype(childFn,parentFn) {
+  function Temp() {}
+  Temp.prototype = parentFn.prototype
+  let obj = new Temp();
+  obj.constructor = childFn;
+  childFn.prototype = obj;
+}
 ```
 ### Object.create实现类式继承

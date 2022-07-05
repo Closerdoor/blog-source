@@ -8,22 +8,22 @@ date: '2022-06-14'
 ```js
 Object.assign();
 Object.create();//创建一个空对象，空对象的__proto__为第一个参数，可用来继承原型。是浅拷贝，改变了第一个参数后，值也会相应改变
-Object.keys(obj)//把对象的所有属性名称(不包括```不可枚举```)组成一个数组
-Object.getOwnPropertyNames(obj)//返回一个由对象的所有自身属性的属性名（包括不可枚举属性(length)但不包括Symbol值作为名称的属性）组成的数组。
-Object.is(a,b)
-Object.getPrototypeOf(obj)
-[[prototype]].isPrototypeOf(obj)
-Object.getOwnPropertyDescriptor(obj, key)
-Object.getOwnPropertyDescriptors(obj)
-obj.hasOwnProperty(key)
-Object.freeze(obj)//冻结对象(冻结后不可修改)
-Object.isFrozen(obj)
+Object.keys(obj);//把对象的所有属性名称(不包括```不可枚举```)组成一个数组
+Object.getOwnPropertyNames(obj);//返回一个由对象的所有自身属性的属性名（包括不可枚举属性(length)但不包括Symbol值作为名称的属性）组成的数组。
+Object.is(a,b);
+Object.getPrototypeOf(obj);
+[[prototype]].isPrototypeOf(obj);
+Object.getOwnPropertyDescriptor(obj, key);
+Object.getOwnPropertyDescriptors(obj);
+obj.hasOwnProperty(key);
+Object.freeze(obj);//冻结对象(冻结后不可修改)
+Object.isFrozen(obj);
 Object.seal(obj);
-Object.isSealed(obj)
-Object.entries(obj)
-Object.fromEntries(arr)
-Object.preventExtensions(obj)
-Object.isExtensible(obj)
+Object.isSealed(obj);
+Object.entries(obj);
+Object.fromEntries(arr);
+Object.preventExtensions(obj);
+Object.isExtensible(obj);
 ```
 ## Object.assign(targetObj,...argObj)
 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
