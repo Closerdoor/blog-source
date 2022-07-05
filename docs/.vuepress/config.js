@@ -9,9 +9,15 @@ module.exports = {
         }
     },
     themeConfig: {
+        // search: false,//禁用内置搜索(默认顶部出现搜索框)
+        // searchMaxSuggestions: 10,//搜索数量
         nav: [{
                 text: '首页',
                 link: '/'
+            },
+            {
+                text: 'VuePress',
+                link: '/vuepress/'
             },
             {
                 text: 'Closerdoor',
@@ -32,6 +38,9 @@ module.exports = {
                 }, {
                     title: "html",
                     path: "/htmlcss/html"
+                }, {
+                    title: "img",
+                    path: "/htmlcss/img"
                 }, {
                     title: "table表格",
                     path: "/htmlcss/table"
@@ -57,6 +66,26 @@ module.exports = {
                     title: "seo",
                     path: "/htmlcss/seo"
                 }]
+            },{
+                title: "html5",
+                path: '/html5/newFeature',
+                collapsable: false, // 不折叠
+                children: [{
+                    title: "新特性",
+                    path: "/html5/newFeature"
+                },{
+                    title: "drag",
+                    path: "/html5/h5drag"
+                },{
+                    title: "video",
+                    path: "/html5/video"
+                },{
+                    title: "audio",
+                    path: "/html5/audio"
+                },{
+                    title: "页面生命周期",
+                    path: "/html5/pageCycle"
+                }],
             },
             {
                 title: "javascript",
@@ -77,13 +106,16 @@ module.exports = {
                 }, {
                     title: "Date和Math对象",
                     path: "/javascript/date_math"
+                },{
+                    title: "Math三角函数",
+                    path: "/javascript/math"
                 }, {
                     title: "DOM",
                     path: "/javascript/dom"
                 }, {
                     title: "BOM",
                     path: "/javascript/bom"
-                },{
+                }, {
                     title: "cookie",
                     path: "/javascript/cookie"
                 }, {
@@ -107,24 +139,51 @@ module.exports = {
                 children: [{
                     title: "call、apply、bind",
                     path: "/es6/this"
-                },{
+                }, {
                     title: "闭包",
                     path: "/es6/closure"
-                },{
+                }, {
                     title: "柯里化函数",
                     path: "/es6/currying"
-                },{
+                }, {
                     title: "解构赋值",
                     path: "/es6/rest"
-                },{
+                }, {
                     title: "prototype",
                     path: "/es6/prototype"
-                },{
+                }, {
                     title: "function",
                     path: "/es6/function"
-                },{
+                }, {
                     title: "对象高级",
                     path: "/es6/object"
+                }, {
+                    title: "symbol",
+                    path: "/es6/symbol"
+                }, {
+                    title: "promise",
+                    path: "/es6/promise"
+                }, {
+                    title: "对象拦截",
+                    path: "/es6/setget"
+                }],
+            },
+            {
+                title: "项目案例",
+                path: '/project/',
+                collapsable: false, // 不折叠
+                children: [{
+                    title: "测试",
+                    path: "/project/"
+                }],
+            },
+            {
+                title: "ajax",
+                path: '/ajax/blob',
+                collapsable: false, // 不折叠
+                children: [{
+                    title: "blob二进制数据流",
+                    path: "/ajax/blob"
                 }],
             },
             {
@@ -153,10 +212,9 @@ module.exports = {
                 path: '/react/createApp',
                 collapsable: false, // 不折叠
                 children: [{
-                        title: "react setup",
-                        path: "/react/createApp"
-                    }
-                ],
+                    title: "react setup",
+                    path: "/react/createApp"
+                }],
             },
             {
                 title: "题目收集",
@@ -225,7 +283,7 @@ module.exports = {
                 }, {
                     title: "websocket实现消息通知",
                     path: "/collect/Fragment4"
-                },{
+                }, {
                     title: "websocket封装",
                     path: "/collect/websocket"
                 }, {

@@ -3,6 +3,7 @@ title: 数组方法
 author: Closerdoor
 date: '2021-12-12'
 ---
+
 ## 方法汇总
 ```js
 toString()		// 把数组转换成字符串，逗号分隔每一项

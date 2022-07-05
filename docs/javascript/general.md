@@ -122,7 +122,10 @@ f() // undefined
 ```
 - `null`：表示空值，即此处的值为空 。
 - `null`在javascript中常见于释放内存空间
-
+```js
+typeof null === 'object';
+null instanceof Anything;//false
+```
 ## 判断数据类型
 ### typeof
 ```

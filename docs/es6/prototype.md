@@ -10,10 +10,14 @@ date: '2022-06-14'
 
 每个函数有一个属性叫prototype(原型，是个对象)。Array.prototype,Object.prototype
 prototype 原型是一个对象，对象上有一个默认属性constructor，constructor指向函数本身
-function.prototype.constructor === function
+`Function.constructor === Function.prototype.constructor === Function`
 prototype上还有一个默认属性__proto__，指向相应构造函数的原型(Object.prototype)
+obj.__proto__ = Object.prototype
+### 构造函数
+`Function.prototype === Object.__proto__`
 
-实例对象
+`Object.prototype.isPrototypeOf(Function)`
+### 实例对象
 实例对象 = new 构造函数
 __proto__属性，new实例化的时候添加到实例对象的隐式属性，是一个对象
 __proto__指向实例对象构造函数的原型,即 实例对象.__proto__ = function.prototype
@@ -74,3 +78,21 @@ function inheritPrototype(childFn,parentFn) {
 }
 ```
 ### Object.create实现类式继承
+```js
+function ChildFn(){
+  ParentFn.call(this)
+}
+//方式一
+ChildFn.prototype.__proto__ = ParentFn.prototype
+//方式二
+ChildFn.prototype = new ParentFn();
+ChildFn.prototype.constructor = ChildFn;
+//方式三
+ChildFn.prototype = Object.create(ParentFn.prototype);
+ChildFn.prototype.constructor = ChildFn;
+//方式四
+function Temp(){}
+Temp.prototype = ParentFn.prototype;
+ChildFn.prototype = new Temp();
+ChildFn.prototype.constructor = ChildFn;
+```
