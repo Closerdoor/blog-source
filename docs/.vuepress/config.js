@@ -85,6 +85,9 @@ module.exports = {
                 },{
                     title: "页面生命周期",
                     path: "/html5/pageCycle"
+                },{
+                    title: "canvas",
+                    path: "/html5/canvas"
                 }],
             },
             {
@@ -184,6 +187,9 @@ module.exports = {
                 children: [{
                     title: "blob二进制数据流",
                     path: "/ajax/blob"
+                },{
+                    title: "fileReader",
+                    path: "/ajax/fileReader"
                 }],
             },
             {
