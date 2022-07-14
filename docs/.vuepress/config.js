@@ -88,6 +88,9 @@ module.exports = {
                 },{
                     title: "canvas",
                     path: "/html5/canvas"
+                },{
+                    title: "多线程与通知",
+                    path: "/html5/worker"
                 }],
             },
             {
@@ -324,6 +327,9 @@ module.exports = {
                 }, {
                     title: "Echarts",
                     path: "/plugin/Echarts"
+                }, {
+                    title: "jquery",
+                    path: "/plugin/jquery"
                 }]
             }, {
                 title: 'css样式库',
