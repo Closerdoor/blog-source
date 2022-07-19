@@ -92,6 +92,17 @@ module.exports = {
                     title: "多线程与通知",
                     path: "/html5/worker"
                 }],
+            },{
+                title: "移动端开发",
+                path: '/webapp/viewport',
+                collapsable: false, // 不折叠
+                children:[{
+                    title: "viewport",
+                    path: "/webapp/viewport"
+                },{
+                    title: "rem",
+                    path: "/webapp/rem"
+                }]
             },
             {
                 title: "javascript",

@@ -124,6 +124,9 @@ $(this).fadeOut()//
 $(this).fadeTo(speed,opacity) //指定透明度的 fadeIn
 $(this).fadeToggle()//
 
+$(this).stop()
+$(this).stop(true)
+
 $(this).animate({ 
   width: "90%",
   height: "100%", 
