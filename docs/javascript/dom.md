@@ -60,6 +60,7 @@ console.log(aImg.getAttribute('src')); //通过 getAttribute方法获取实际 �
 console.log(aImg.hasAttribute('src')); // 判断节点对象是否含有 某个 属性
 //注：setAttribute设置的值为字符串
 oInput.setAttribute('checked', true)
+element.removeAttribute('属性名');
 ```
 ## 获取节点样式style
 ```js
