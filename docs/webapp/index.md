@@ -43,4 +43,13 @@ window.devicePixelRatio; //3
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 ```
+### 布局视口 layout viewport
+`document.documentElement.clientWidth / clientHeight`来获取布局视口大小。
+当没有进行meta标签设置时，移动端默认布局视口为980px。
+### 视觉视口 visual viewport
+视觉视口默认等于当前浏览器的窗口大小
+`window.innerWidth / innerHeight`来获取视觉视口大小
+### 理想视口 ideal viewport
+`screen.width / height`来获取理想视口大小
+
 
