@@ -94,14 +94,17 @@ module.exports = {
                 }],
             },{
                 title: "移动端开发",
-                path: '/webapp/viewport',
+                path: '/webapp/index',
                 collapsable: false, // 不折叠
                 children:[{
-                    title: "viewport",
-                    path: "/webapp/viewport"
+                    title: "移动端尺寸",
+                    path: "/webapp/index"
                 },{
                     title: "rem",
                     path: "/webapp/rem"
+                },{
+                    title: "viewport",
+                    path: "/webapp/viewport"
                 }]
             },
             {
