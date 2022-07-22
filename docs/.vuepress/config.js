@@ -100,6 +100,12 @@ module.exports = {
                     title: "移动端尺寸",
                     path: "/webapp/index"
                 },{
+                    title: "移动端适配方案",
+                    path: "/webapp/page"
+                },{
+                    title: "手指触摸事件",
+                    path: "/webapp/touchEvent"
+                },{
                     title: "rem",
                     path: "/webapp/rem"
                 },{
